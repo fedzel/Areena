@@ -1,0 +1,40 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Actor",
+"language": "GDScript",
+"path": "res://scribut/classes/Actor.gd"
+}, {
+"base": "Node",
+"class": "Team",
+"language": "GDScript",
+"path": "res://scribut/classes/Teams.gd"
+} ]
+_global_script_class_icons={
+"Actor": "",
+"Team": ""
+}
+
+[application]
+
+config/name="areena 15"
+run/main_scene="res://skenet/Areena.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+turn_que="*res://scribut/global/turn_que.gd"
+Global="*res://scribut/global/Global.gd"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
